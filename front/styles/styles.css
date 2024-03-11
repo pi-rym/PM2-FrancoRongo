@@ -1,0 +1,66 @@
+.titulo {
+    background-color: #08bafb; /* Color de fondo (solo como ejemplo) */
+    padding: 10px; /* Añadir relleno para separar el contenido del borde */
+    display: flex;
+    align-items: center;
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.logo {
+    width: 100px; 
+    height: auto;
+    margin-right: 10px;
+}
+.h1 {
+    color: #000000;
+    font-size: 50px;
+}
+.contenedor {
+    display: flex; /* Utilizamos flexbox para establecer un diseño flexible */
+    justify-content: flex-end;
+    align-content: end;
+}
+.pagina1, .pagina2, .pagina3 {
+    margin: 0; /* Elimina el margen predeterminado del título */
+    margin-left: 10px; /* Agrega espacio entre los títulos */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background-image: url('https://i.pinimg.com/originals/10/b1/ba/10b1bad21f79df5f462c1c09f12db6ff.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    opacity: 0.8;
+    
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #303947;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+}
+.articleMovie {
+    display: inline-block;
+    margin-right: 7%;
+    margin-left: 3%;
+    margin-top: 3%;
+    justify-content: space-evenly;
+    
+}
+.divMovie{
+    color: rgb(251, 250, 250);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.articleMovie:hover{
+    transform: scale(1.1);
+    transition: transform 3s;
+}
+.divMovie:hover{
+    transform: scale(1.1);
+    transition: transform 3s;
+}
+
