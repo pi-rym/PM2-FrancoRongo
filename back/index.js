@@ -1,4 +1,4 @@
 const app = require('./Src/services/server');
-const router = require("../routes/index");
+const router = require("./Src/routes/index");
 
 app.use(router)

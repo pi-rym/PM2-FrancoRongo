@@ -1,6 +1,6 @@
 //Este index define las rutas.
-const Router = requiere ("express")
-const moviesRoute = requiere("./moviesRoute.js")
+const Router = require ("express")
+const moviesRoute = require("./moviesRoute.js")
 
 const router = Router()
 
