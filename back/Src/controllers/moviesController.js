@@ -1,4 +1,4 @@
-const getMoviesService = require("../services/getMovies");
+const getMoviesService = require("../services/getMoviesService");
 
 const moviesController = async (req, res) => {
     try {

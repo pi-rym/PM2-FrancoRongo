@@ -1,4 +1,9 @@
-const app = require('./Src/services/server');
-const router = require("./Src/routes/index");
+const { app,PORT } = require('./Src/services/server');
+const dbConnection = require('./Src/config/dbConnection');
 
-app.use(router)
+dbConnection ()
+.then (()=>{
+   app.listen(PORT, () => {
+  console.log(`Servidor Express iniciado en el puerto ${PORT}`);
+});
+})
