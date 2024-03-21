@@ -23,9 +23,9 @@ function submitForm(event) {
     }
     
     const yearInput = parseInt (year);
-    if(isNaN(yearInput) || yearInput > 1800 || yearInput < 2024){
-        alert("El Año debe ser entre 1800 y 2024");
-        return ;
+    if (isNaN(yearInput)  || (yearInput < 1800  || yearInput > 2030)) {
+        alert('El año debe estar entre 1800 y 2030.');
+        return;
     }
     
     const selectedGenres = Array.from(genre).map(checkbox => checkbox.value)
