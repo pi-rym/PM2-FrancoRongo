@@ -8,7 +8,12 @@ const PORT = 3000;
 
 app.use(morgan('dev')); //Registro de solicitudes HTTP
 
-app.use(cors()); //Desde que dominio podes acceder a esta aplicacion.(protocolo de seguridad)
+app.use(cors({
+ origin: 'http://127.0.0.1:8080',
+ methods: ['GET', 'POST'], 
+ allowedHeaders: ['Content-Type', 'Authorization'],
+}));
+
 
 app.use(express.json()); //Este middleware se utiliza para transforma datos en formato .Json y transformarlos en objetos javaScript.
 
